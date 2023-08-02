@@ -1,2 +1,2 @@
 # canfestival_ftp
-基于canfestival的一种文件传输设计。并对canfestival工程文件结构做了一些改动
+基于canfestival的一种小型文件传输设计。并对canfestival工程文件结构做了一些改动
