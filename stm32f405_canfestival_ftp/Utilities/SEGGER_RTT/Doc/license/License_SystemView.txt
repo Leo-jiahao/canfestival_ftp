@@ -1,0 +1,249 @@
+SEGGER's Friendly License (SFL), January 16th 2020
+
+For non-commercial use or for evaluation purposes, you - regardless whether you 
+are an individual person or a legal entity - are welcome to use the software 
+free of charge under this license.
+Any other use of the software is considered commercial use, for which a 
+commercial-use license must be obtained from SEGGER.
+
+
+DEFINITIONS
+
+"Non-commercial use" means using the software for teaching, learning, studying, 
+or projects that do not have a commercial background. If the software is used 
+for products or services intended to be sold, the use is considered to be 
+commercial.
+"Evaluation" means you are trying out the software for possible future use. 
+While the length of this time period is up to you, once it becomes a standard 
+part of your workflow we no longer consider it evaluation. 
+
+
+DISCLAIMER OF WARRANTY
+
+When using the software under this license, you accept that it is provided on 
+an "as is" basis, without warranty of any kind. 
+
+
+LIMITATION OF LIABILITY
+
+When using the software under this license, you accept that SEGGER is not liable 
+for any damages arising out of the use of or inability to use the software.
+
+
+3RD-PARTY SOFTWARE AND LICENSES
+
+More information about 3rd-party components, if any, included in the software 
+and the licenses that these components are under can be found in the file 
+doc/license/3rd-party.txt after installation of the software.
+
+
+RESTRICTIONS
+
+You may not:
+(a) decompile, disassemble, reverse engineer, or otherwise attempt to derive the 
+    source code of the software,
+(b) redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer 
+    rights in the software,
+(c) remove or alter any trademark, logo, copyright or other proprietary notices, 
+    legends, symbols or labels of the software.
+
+    
+REVOCATION
+
+SEGGER reserves the right to revoke the right to use the software granted by 
+this license on a case-by-case basis. In this unlikely event, SEGGER will 
+provide the revocation notice in writing, allowing an adequate notice period.
+
+
+APPLICABLE LAW, VENUE
+
+German Law (with the exception of its rules for Conflicts of Law) applies. 
+Sole venue is Monheim/Rhein.
+
+(c) 2020 SEGGER Microcontroller GmbH  www.segger.com  info@segger.com  
+
+
+
+SEGGER's Commercial-use License (CUL) Agreement, March 15th 2022
+
+This is a legal agreement between "you" (either as an individual or a single 
+entity) and SEGGER Microcontroller GmbH ("SEGGER") for the SEGGER software 
+product this license agreement is distributed with ("Software").
+
+By using the Software for commercial use (as defined by the 
+SEGGER's Friendly License (SFL)[https://www.segger.com/license-sfl]), you agree 
+to be bound by the terms of this agreement.
+All IP rights, title and interest in the Software is and shall at all times 
+remain with SEGGER.
+
+
+LICENSE GRANT
+
+Subject to the payment of the applicable license fee, SEGGER grants to you a 
+personal, non-exclusive license to install and use the Software. The use of the 
+Software is limited to the specific license model purchased and the target 
+architecture as specified by SEGGER.
+
+
+LICENSE MODELS
+
+J-Link locked License:
+The J-Link locked License entitles an individual to use the Software with a 
+specific SEGGER J-Link debug probe only, identified by its unique serial number. 
+The SEGGER J-Link locked License may be used by an individual only on a single, 
+self-contained computer unit (stationary or portable), directly and physically 
+connected to the SEGGER J-Link debug probe. A switch of the specific 
+SEGGER J-Link debug probe to another SEGGER J-Link debug probe may be allowed 
+by SEGGER; provided that the initial SEGGER J-Link debug probe has been 
+identified and approved as defective by SEGGER. The Software may not be accessed 
+by other individuals from or on other computer units NOT directly and physically 
+connected to the specific SEGGER J-Link (except for access via 
+J-Link tunnel mode).
+The number of individuals within an organisation, company, entity or a like to 
+use the Software under this J-Link locked License model, if more than one, is 
+defined by the number of SEGGER J-Link debug probes identified by their unique 
+serial numbers on the PO and related order confirmation.
+
+PC-locked License (where applicable, upon request):
+A PC-locked License is a personal, non-exclusive license for an individual to 
+use the Software while locked to the MAC address of a PC where the software is 
+installed.
+The PC-locked License may be used by the individual only on one single, 
+self-contained computer unit (stationary or portable), designated and identified 
+through its MAC address or other means of identification. PC-locked Licenses are 
+available from SEGGER upon request.
+
+Automated Environment License (where applicable, upon request):
+An Automated Environment License entitles you to use the Software in automated 
+environments, such as build servers or continuous integration systems.
+An Automated Environment License may not be used to actively develop a project. 
+An Automated Environment License may not be used with works which have been 
+created without a commercial use license.
+An Automated Environment License is not locked to the hardware and may be 
+installed and used on one single computer unit or virtual machine instance.
+
+Device-based License:
+In cooperation with selected silicon vendors, the Software is made available 
+free of charge.
+The Device-based License entitles you to use the Software under defined 
+circumstances, such as for and with specified devices, only.
+
+Floating License (where applicable, upon request):
+A Floating License entitles any person employed by you and working within your 
+company network to use the Software. However, the number of persons to 
+concurrently use the Software is limited. The limitation is defined by the 
+number of seats associated with the license. 
+A floating license is installed on an instance of the SEGGER license server on 
+your company network. The license manager releases concurrent licenses for as 
+many persons as you have purchased seats for.
+
+Unlocked Developer-based License (where applicable, upon request):
+Such license entitles you to designate a limited number of uniquely named 
+developers employed by you to use the Software on any of their workstations. 
+The number of uniquely named developers is stated on the related purchase order 
+and order confirmation. It is solely your responsibility to ensure that only 
+the designated developers use the Software under this license. You shall maintain 
+a list of designated developers and provide it to SEGGER upon request. Only the 
+uniquely named developers on the list are entitled to receive technical support 
+from SEGGER.   
+
+Site License (upon request):
+A Site License entitles you, as a single legal entity, to designate an unlimited 
+number of persons employed by you and working in facilities located within one 
+city or within a range of 20 miles (whichever is greater) to use the Software 
+in connection with the development and creation of your Products. The city is 
+defined in the PO and related order confirmation.
+
+Company-wide License (upon request):
+A Company-wide License entitles you, as a single legal entity, to designate an 
+unlimited number of persons employed by you to use the Software in connection 
+with the development and creation of your Products.  
+The use of the Software by your Consultants or Affiliates or Subsidiaries is not permitted and 
+requires the purchase of additional licenses or a Global license.
+
+Global License (upon request):
+A Global License entitles you, as a single legal entity, to designate an 
+unlimited number of persons employed by you to use the Software in connection 
+with the development and creation of your Products.  
+The use of the Software by your Affiliates or Subsidiaries is permitted, provided 
+that you have an ownership of more than 50% of the controlled Affiliate or Subsidiary's voting shares. 
+An Affiliate or Subsidiary will be entitled to use the Software only during the period when such control exists.
+
+
+RESTRICTIONS
+
+You may not:
+(a) decompile, disassemble, reverse engineer, or otherwise attempt to derive the 
+    source code of the Software,
+(b) sell, rent, lease, sublicense, or otherwise transfer rights in the Software,
+(c) remove or alter any trademark, logo, copyright or other proprietary notices, 
+    legends, symbols or label in the Software,
+(d) redistribute or encumber the Software without prior written authorisation 
+    from SEGGER.
+Without prejudice to any other rights, SEGGER may terminate this agreement if 
+you fail to comply with foregoing restrictions.
+
+
+WARRANTY AND LIABILITY
+
+SEGGER warrants that, for 12 months from the date of the initial shipment of 
+the Software or, where applicable, the shipment date of the related 
+activation key, to you (the "Warranty Period"), the Software shall operate 
+substantially in accordance with the published functional specifications in 
+effect at the time of shipment. If, during the Warranty Period the Software is 
+found to be defective, SEGGER will use its reasonable efforts to correct the 
+deviation within a reasonable time after notification from you. The entire 
+liability of SEGGER, and its suppliers and your exclusive remedy shall be, at 
+the option of SEGGER, either to return the price paid to SEGGER or to replace 
+the Software (a maximum of 3 replacements). 
+The warranty set forth in this section is the only warranty made by SEGGER and 
+SEGGER expressly disclaims all other warranties whether express or implied 
+including, without limitation, warranties of merchantability and fitness for a 
+particular purpose and non-infringement.
+
+In developing the Software SEGGER attempted to offer the most current, correct 
+and clearly expressed information possible. Nonetheless, errors may occur and 
+SEGGER does not warrant that the Software is free from bugs, errors, or other 
+program limitations.
+
+If, during the Warranty Period, a defect appears in the Software, you shall 
+notify SEGGER. To correct the deviation you must give detailed information about 
+the error and the target application.
+
+SEGGER makes no representation and provides no warranty or guarantee that the 
+Software will be suited to Your particular needs or use.
+
+Except to the extent prohibited by applicable law, in no event shall SEGGER nor 
+any of its distributors or affiliates be liable to you for any direct, indirect, 
+punitive, special, incidental or consequential damages, including lost profits, 
+business interruption and like damages, even if advised of the possibility of 
+such losses or damages. The total monetary liability of SEGGER shall be limited 
+to the amount actually paid by you for the Software License.
+
+
+3RD-PARTY SOFTWARE AND LICENSES
+
+More information about 3rd-party components, if any, included in the Software 
+and the licenses that these components are under can be found in the file 
+doc/license/3rd-party.txt after installation of the Software.
+
+
+MISCELLANEOUS
+
+(a) This agreement shall be governed by the laws of the Federal Republic of 
+    Germany (with the exception of its rules on conflict of laws and the 
+    United Nations Convention on Contracts for the 
+    International Sale of Goods - CISG). This agreement constitutes the entire 
+    agreement between the parties concerning the subject matter hereof.
+(b) If any provision in this agreement should be held illegal or unenforceable 
+    by a court having jurisdiction, such provision shall be modified to the 
+    extent necessary to render it enforceable without losing its intent, or 
+    severed from this agreement if no such modification is possible, and other 
+    provisions of this agreement shall remain in full force and effect. This 
+    agreement may be changed only by an amendment in writing, signed by both 
+    parties.
+(c) If any SEGGER professional services are being provided, then such 
+    professional services are provided pursuant to the terms of a separate 
+    agreement.
+
+(c) 2022 SEGGER Microcontroller GmbH

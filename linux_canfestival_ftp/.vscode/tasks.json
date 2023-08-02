@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "compile by shell",
+            "command": "bash",
+            "args": [
+                "${workspaceRoot}/compile.sh"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "detail": "shell script compile project"
+        }
+    ],
+    "version": "2.0.0"
+}

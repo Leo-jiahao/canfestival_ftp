@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<!-- V171109 -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Release notes for SystemView</title>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body {
+  margin: 0;
+  background-color: #4F5157;
+  color: #3B3D3F;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 0.9rem  line-height: 1.5;
+  min-width: 400px;
+}
+.header{
+  background: #2C5B9C;
+  }
+.head {
+  color: #fff;
+  padding: 20px 30px;
+}
+.head h2 {
+  color: #fff;
+}
+.headh3 li, .head h3 a, .head a {
+  color: #fff;
+}
+.footer {
+  color: #4f5157;
+  background: #BFC3C6;
+  padding: 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.footer h2 {
+  color: #bfc3c6;
+}
+.footer h3 li, .footer h3 a, .footer a {
+  color: #000;
+}
+
+.divider-global {
+  border-top: 2px solid #fff;
+  padding: 20px 30px;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 1.5em;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+h2 {
+  text-align: left;
+  font-size: 1.2em;
+  color: #002F5C;
+  text-decoration: underline;
+  display: inline-block;
+}
+h3 {
+  text-align: left;
+  font-size: 1.0em;
+}
+h3 li {
+  margin: 10px 0;
+}
+div.divider-global:nth-of-type(odd) {
+  background: #F2F2F2;
+}
+div.divider-global:nth-of-type(even) {
+  background: #F6F6F6;
+}
+.toolChain Table {
+  max-width: 1000px;
+}
+.toolChain Table th {
+  font-weight: 600;
+  text-align: left;
+  width: 12%;
+}
+#seggerLogo {
+  padding: 20px 30px;
+  display: inline-block;
+}
+.claim {
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  line-height: 115px;
+  vertical-align: top;
+}
+ @media screen and (max-width: 600px) {
+.claim {
+  display: none;
+}
+}
+ @media screen and (min-width: 600px) {
+.claim {
+  font-size: 200%;
+}
+}
+ @media screen and (min-width: 1024px) {
+.claim {
+  font-size: 300%;
+}
+}
+</style>
+</head>
+<body class="en" id="top">
+<main class="main-content" id="content" role="main">
+  <div class="header">
+    <div class="row">
+      <div id="seggerLogo"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="75px" viewBox="110 27.5 150 75" style="enable-background:new 110 27.5 150 75;" xml:space="preserve">
+        <style type="text/css">
+
+  .st0{fill:#FFFFFF;}
+  .st1{fill:#005CA8;}
+  .st2{fill:#010000;}
+
+</style>
+        <g>
+          <g>
+            <path class="st0" d="M258,96.1c0,2.6-2,4.7-4.4,4.7H115.9c-2.4,0-4.4-2.1-4.4-4.7V33.7c0-2.6,2-4.7,4.4-4.7h137.7
+      c2.4,0,4.4,2.1,4.4,4.7"></path>
+            <path class="st2" d="M253.7,102.3H115.9c-3.3,0-5.9-2.8-5.9-6.2V33.7c0-3.5,2.6-6.2,5.9-6.2h137.7c3.3,0,5.9,2.8,5.9,6.2v62.4
+      C259.6,99.5,256.9,102.3,253.7,102.3z M115.9,30.6c-1.6,0-2.8,1.4-2.8,3.1v62.4c0,1.7,1.3,3.1,2.8,3.1h137.7
+      c1.6,0,2.8-1.4,2.8-3.1V33.7c0-1.7-1.3-3.1-2.8-3.1H115.9z"></path>
+          </g>
+          <polygon class="st1" points="117.8,52.4 127.1,64.9 117.8,77.3   "></polygon>
+          <g>
+            <path class="st1" d="M131.6,41.3l15.6,20.3v0.1c0.4,0.5,1,1,1.7,1h99.7c1.2,0,2.2-1.1,2.2-2.3c0-1.2-1-2.3-2.2-2.3H150l-14.9-19.4
+      l0,0c-0.4-0.5-1-0.9-1.7-0.9c-1.2,0-2.2,1-2.2,2.2C131.2,40.4,131.4,40.9,131.6,41.3L131.6,41.3z"></path>
+            <path class="st1" d="M140.4,66.3c0.3-0.4,0.5-0.9,0.5-1.4c0-0.5-0.2-1-0.5-1.4l-18.6-24.9l0,0c-0.4-0.5-1-0.9-1.7-0.9
+      c-1.2,0-2.2,1-2.2,2.2c0,0.5,0.2,1,0.5,1.4l17.6,23.5l-17.7,23.5c-0.3,0.4-0.5,0.9-0.5,1.4c0,1.2,1,2.2,2.2,2.2
+      c0.7,0,1.3-0.3,1.7-0.9l0,0L140.4,66.3z"></path>
+            <path class="st1" d="M248.7,67.2h-99.8c-0.7,0-1.3,0.4-1.7,1v0.1l-15.6,20.3l0,0c-0.3,0.3-0.5,0.8-0.5,1.3c0,1.2,1,2.2,2.2,2.2
+      c0.7,0,1.3-0.3,1.7-0.9v0.1l15-19.4h98.7c1.2,0,2.2-1.1,2.2-2.3S249.9,67.2,248.7,67.2z"></path>
+          </g>
+          <path class="st2" d="M163,80.7c0,0.4-0.1,0.7-0.4,1c-0.3,0.2-0.7,0.3-1.2,0.3c-0.6,0-1.2-0.3-1.8-1c-0.2-0.2-0.3-0.3-0.3-0.3
+    c-0.3-0.3-0.7-0.5-1.2-0.7c-0.5-0.1-1-0.2-1.7-0.2c-0.9,0-1.6,0.2-2.1,0.5c-0.5,0.3-0.7,0.7-0.7,1.3c0,0.7,1,1.3,2.9,1.7
+    c0.5,0.1,0.9,0.2,1.1,0.2c1.2,0.2,2.1,0.5,2.7,0.6s1,0.3,1.5,0.5c0.7,0.3,1.2,0.8,1.6,1.3c0.3,0.6,0.5,1.2,0.5,2
+    c0,1.4-0.6,2.6-1.8,3.4c-1.2,0.9-2.8,1.3-4.9,1.3c-1.2,0-2.1-0.1-2.9-0.3c-0.8-0.2-1.6-0.5-2.4-1c-0.5-0.3-0.9-0.7-1.2-1.2
+    s-0.5-0.9-0.5-1.3c0-0.4,0.1-0.7,0.4-1c0.3-0.3,0.7-0.4,1.2-0.4c0.6,0,1.2,0.3,1.7,1c0.2,0.3,0.3,0.5,0.5,0.6
+    c0.3,0.3,0.7,0.6,1.3,0.8c0.5,0.2,1.1,0.2,1.8,0.2c1.1,0,1.9-0.2,2.5-0.5c0.6-0.3,0.9-0.8,0.9-1.4c0-0.9-1.4-1.6-4.3-2.1
+    c-0.1,0-0.2-0.1-0.2-0.1c-2.2-0.4-3.7-1-4.5-1.6c-0.8-0.6-1.2-1.6-1.2-2.8c0-1.4,0.6-2.5,1.7-3.2c1.1-0.7,2.8-1.2,4.8-1.2
+    c1,0,1.8,0.1,2.6,0.3c0.7,0.2,1.5,0.5,2.1,0.9c0.5,0.3,0.9,0.6,1.2,1C162.8,79.9,163,80.3,163,80.7z"></path>
+          <path class="st2" d="M177.8,89.6c0.6,0,1.1,0.1,1.4,0.3c0.3,0.2,0.5,0.6,0.5,1s-0.2,0.7-0.5,1c-0.3,0.2-0.8,0.3-1.4,0.3h-9
+    c-0.8,0-1.4-0.2-1.7-0.5c-0.3-0.3-0.5-0.9-0.5-1.8V80c0-0.9,0.1-1.5,0.5-1.8c0.3-0.3,0.9-0.5,1.7-0.5h8.6c0.6,0,1.1,0.1,1.4,0.3
+    c0.3,0.2,0.5,0.5,0.5,1c0,0.4-0.2,0.7-0.5,0.9c-0.3,0.2-0.8,0.3-1.4,0.3h-7.2v3.1h6.5c0.6,0,1.1,0.1,1.4,0.3c0.3,0.2,0.5,0.5,0.5,1
+    c0,0.4-0.2,0.7-0.5,0.9c-0.3,0.2-0.8,0.3-1.4,0.3h-6.5v3.7L177.8,89.6L177.8,89.6z"></path>
+          <path class="st2" d="M194.2,86.9h-2.6c-0.5,0-0.8-0.1-1.1-0.3c-0.3-0.2-0.4-0.5-0.4-0.9c0-0.3,0.1-0.7,0.4-0.9
+    c0.3-0.2,0.6-0.3,1.1-0.3h3.8c0.7,0,1.3,0.1,1.6,0.3c0.3,0.2,0.5,0.6,0.5,1v5.6c0,0.5-0.1,0.7-0.3,1c-0.2,0.2-0.5,0.3-0.9,0.3
+    c-0.3,0-0.6-0.1-0.9-0.2c-0.2-0.2-0.4-0.4-0.5-0.7l-0.3-1.1c-0.6,0.7-1.4,1.3-2.2,1.6c-0.8,0.3-1.7,0.5-2.8,0.5
+    c-2.4,0-4.4-0.7-5.8-2.1c-1.5-1.4-2.2-3.3-2.2-5.6s0.7-4.2,2.2-5.6c1.5-1.4,3.5-2.1,5.9-2.1c0.8,0,1.6,0.1,2.2,0.2
+    c0.7,0.1,1.4,0.3,2,0.6c0.9,0.4,1.5,0.8,2,1.3c0.5,0.5,0.7,1,0.7,1.4c0,0.4-0.2,0.7-0.5,1c-0.3,0.3-0.6,0.4-1.1,0.4
+    c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-1-0.8c-0.5-0.5-1-0.9-1.4-1.1c-0.5-0.2-1.1-0.3-1.8-0.3c-1.4,0-2.6,0.5-3.4,1.3
+    c-0.8,0.9-1.2,2.1-1.2,3.7c0,1.6,0.4,2.8,1.3,3.7c0.9,0.9,2.1,1.3,3.5,1.3c1.2,0,2.1-0.3,2.8-0.9C193.5,88.7,193.9,87.8,194.2,86.9
+    z"></path>
+          <path class="st2" d="M212.6,86.9H210c-0.5,0-0.8-0.1-1.1-0.3c-0.3-0.2-0.4-0.5-0.4-0.9c0-0.3,0.1-0.7,0.4-0.9
+    c0.3-0.2,0.6-0.3,1.1-0.3h3.8c0.7,0,1.3,0.1,1.6,0.3c0.3,0.2,0.5,0.6,0.5,1v5.6c0,0.5-0.1,0.7-0.3,1c-0.2,0.2-0.5,0.3-1,0.3
+    c-0.3,0-0.6-0.1-0.9-0.2c-0.2-0.2-0.3-0.4-0.5-0.7l-0.3-1.1c-0.6,0.7-1.4,1.3-2.2,1.6c-0.8,0.3-1.8,0.5-2.9,0.5
+    c-2.4,0-4.4-0.7-5.9-2.1c-1.5-1.4-2.2-3.3-2.2-5.6s0.7-4.2,2.2-5.6c1.5-1.4,3.5-2.1,5.9-2.1c0.8,0,1.6,0.1,2.2,0.2
+    c0.7,0.1,1.4,0.3,2,0.6c0.9,0.4,1.5,0.8,2,1.3c0.5,0.5,0.7,1,0.7,1.4c0,0.4-0.1,0.7-0.5,1c-0.3,0.3-0.7,0.4-1.1,0.4
+    c-0.3,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-1-0.8c-0.5-0.5-0.9-0.9-1.4-1.1c-0.5-0.2-1.1-0.3-1.8-0.3c-1.4,0-2.6,0.5-3.4,1.3
+    c-0.8,0.9-1.2,2.1-1.2,3.7c0,1.6,0.4,2.8,1.3,3.7c0.9,0.9,2,1.3,3.5,1.3c1.1,0,2.1-0.3,2.8-0.9C212,88.7,212.5,87.8,212.6,86.9z"></path>
+          <path class="st2" d="M230.5,89.6c0.6,0,1.2,0.1,1.4,0.3c0.3,0.2,0.5,0.6,0.5,1s-0.2,0.7-0.5,1c-0.3,0.2-0.8,0.3-1.4,0.3h-9
+    c-0.8,0-1.4-0.2-1.7-0.5c-0.3-0.3-0.5-0.9-0.5-1.8V80c0-0.9,0.2-1.5,0.5-1.8c0.3-0.3,0.9-0.5,1.7-0.5h8.6c0.6,0,1.1,0.1,1.4,0.3
+    s0.5,0.5,0.5,1c0,0.4-0.2,0.7-0.5,0.9c-0.3,0.2-0.8,0.3-1.4,0.3h-7.2v3.1h6.6c0.6,0,1.1,0.1,1.4,0.3c0.3,0.2,0.5,0.5,0.5,1
+    c0,0.4-0.2,0.7-0.5,0.9c-0.3,0.2-0.8,0.3-1.4,0.3h-6.6v3.7L230.5,89.6L230.5,89.6z"></path>
+          <path class="st2" d="M238.4,80.3v3.9h4.1c0.9,0,1.6-0.2,2-0.5c0.4-0.3,0.6-0.8,0.6-1.4c0-0.6-0.2-1.1-0.6-1.4
+    c-0.4-0.3-1-0.5-1.8-0.5H238.4L238.4,80.3z M238.4,90.8c0,0.5-0.1,0.9-0.5,1.2c-0.3,0.3-0.7,0.4-1.3,0.4s-1-0.1-1.3-0.4
+    c-0.3-0.3-0.5-0.7-0.5-1.2V80c0-0.9,0.2-1.5,0.5-1.8c0.3-0.3,0.9-0.5,1.7-0.5h6.2c1.9,0,3.3,0.3,4.1,1c0.9,0.7,1.4,1.7,1.4,3.1
+    c0,0.9-0.2,1.6-0.7,2.2c-0.5,0.6-1.1,1-1.9,1.2c0.6,0.2,1.1,0.5,1.5,0.9c0.3,0.4,0.5,0.9,0.6,1.6c0.1,0.3,0.1,0.6,0.1,1
+    c0,0.5,0.1,0.7,0.1,0.9c0.1,0.2,0.1,0.4,0.2,0.7c0.1,0.3,0.1,0.6,0.1,0.7c0,0.4-0.2,0.7-0.5,1c-0.3,0.2-0.7,0.3-1.3,0.3
+    c-0.7,0-1.3-0.2-1.6-0.5c-0.3-0.3-0.5-1.3-0.6-2.8c-0.1-1.1-0.3-1.9-0.7-2.2c-0.3-0.3-1-0.4-1.9-0.4h-3.7v4.3H238.4z"></path>
+        </g>
+        </svg> </div>
+      <div class="claim">The Embedded Experts</div>
+      <div class="head">
+        <div class="container">
+          <h1>Release notes for SEGGER SystemView</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ****************************************************************** -->
+  <!-- History                                                       -->
+  <!-- ****************************************************************** -->
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 3.32 [27. Apr 2022]</h2>
+      <h3>New Features</h3>
+      <ol>
+      
+      </ol>
+      <h3>Improvements</h3>
+      <ol>
+        <li>SystemView: Improved naviation through timeline with scrollbar.</li>
+        <li>SystemView: Improved dragging the timeline.</li>
+        <li>SystemView: Added '@' as marker in description files for non-function events.</li>
+        <li>SystemView: Update timeline while recording more frequently.</li>
+        <li>SystemView: Added number of Named Resources in System Information window.</li>
+        <li>SystemView: Removed window frames for cleaner look.</li>
+        <li>SystemView: Cleaned up menu items.</li>
+        <li>SystemView: Added zooming with '=' key.</li>
+        <li>SystemView: Updated embOS description file.</li>
+        <li>SystemView: Added embOS-Ultra description file.</li>
+        <li>SystemView: Updated FreeRTOS description file.</li>
+        <li>Target source: Added embOS-Ultra configuration.</li>
+        <li>Target source: FreeRTOS integration for FreeRTOS V10.4 added.</li>
+        <li>Target source: Added example configuration for UART Recorder.</li>
+      </ol>
+      <h3>Program corrections</h3>
+      <ol>
+        <li>SystemView: Command line parameters for J-Link recorder were not recognized. Fixed.</li>
+        <li>SystemView: Zooming in on long recordings could crash SystemView. Fixed.</li>
+        <li>SystemView: Function call events did not display function enter icon. Fixed.</li>
+        <li>SystemView: Starting UART Recorder after it has been canceled did not work. Fixed.</li>
+        <li>SystemView: Host-formatting string parameters could crash SystemView. Fixed.</li>
+        <li>SystemView: High magnification in CPU Load could lock up SystemView. Fixed.</li>
+      </ol>
+    </div>
+  </div> 
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 3.30 [10. Feb 2021]</h2>
+      <h3>New Features</h3>
+      <ol>
+        <li>SystemView: Added support for handling multiple actions given on the command line.</li>
+        <li>SystemView: Added command line action -delay.</li>
+        <li>SystemView: Added remote control.</li>
+        <li>Systemview: Added command line control of running instance when started with -single.</li>
+        <li>SystemView: Added export to Contexts Window.</li>
+        <li>SystemView: Added export to Terminal Window.</li>
+      </ol>
+      <h3>Improvements</h3>
+      <ol>
+        <li>SystemView: Improved error handling.</li>
+        <li>SystemView: Loading module description expected Module_VVersion, changed to Module_Version (as in SystemView V2)</li>
+        <li>SystemView: SystemView quit on load error. Changed to stay open.</li>
+        <li>SystemView: Improved enabling/disabling Load and Save actions.</li>
+        <li>SystemView: Do not show recording properties dialog when saving through the command line to enable full automation.</li>
+        <li>SystemView: Print duration of overflows in System Info.</li>
+        <li>Target Source: Encode a 0 length string if string pointer is NULL.</li>
+        <li>Target Source: Renamed example embOS config Zynq7010 to Zynq7000 to match embOS BSP.</li>
+        <li>Target Source: Improved embOS SystemView interface.</li>
+      </ol>
+      <h3>Program corrections</h3>
+      <ol>
+        <li>SystemView: Invert Wheel preference has not been passed to Timeline. Fixed.</li>
+        <li>SystemView: Analysis could not be restarted after error. Fixed.</li>
+        <li>SystemView: Overflows within Overflow Context have not been shown in Timeline. Fixed.</li>
+        <li>SystemView: SystemView could crash on decoding invalid data. Fixed.</li>
+        <li>SystemView: In high-load applications, data could get lost and lead to invalid event analysis. Fixed.</li>
+        <li>SystemView: SystemView could display garbage for invalid task names. Fixed.</li>
+        <li>SystemView: Task Terminate Event displayed wrong event details. Fixed.</li>
+      </ol>
+    </div>
+  </div>  
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 3.20 [20. Oct 2020]</h2>
+      <h3>New Features</h3>
+      <ol>
+        <li>SystemView: Added Task Blocked Time statistics to Contexts Window.</li>
+        <li>SystemView: Added support for fallback formatting of unknown values in NamedTypes.</li>
+        <li>SystemView: Added support for spaces in NamedTypes when enclosed in quotes.</li>
+        <li>Target Source: Updated RTT sources to support Cortex-A based targets with cache.</li>
+      </ol>
+      <h3>Improvements</h3>
+      <ol>
+        <li>Updated to SEGGER's Friendly License.</li>
+        <li>SystemView: Improved Target Device Selection Dialog.</li>
+        <li>SystemView: Improved CPU Load while recording.</li>
+        <li>SystemView: Added analyzer statistics to System Information.</li>
+        <li>SystemView: Improved display of NamedType values if undefined.</li>
+        <li>SystemView: Improved display of Task information when instrumentation uses Task Stop (e.g. uC/OS)</li>
+        <li>SystemView: Events List columns can now be shown/hidden and moved.</li>
+        <li>SystemView: Restore column size and order of Contexts and Events Window.</li>
+        <li>SystemView: Added timestamp Delta to Events List.</li>
+        <li>SystemView: Added Raw Data to Events List.</li>
+        <li>SystemView: Show runtime of each execution in Timeline Window.</li>
+        <li>SystemView: Added SystemView to Linux start menu.</li>
+        <li>SystemView: Added file associations on Linux.</li>
+        <li>SystemView: Updated embOS description file.</li>
+        <li>Target Source: Moved default defines to SEGGER_SYSVIEW_ConfDefaults.h, SEGGER_SYSVIEW_Conf.h can be empty in most cases.</li>
+        <li>Target Source: Added example configuration headers for embOS.</li>
+      </ol>
+      <h3>Program corrections</h3>
+      <ol>
+        <li>SystemView: J-Link Recorder Configuration were not shown when configuration was invalid. Fixed.</li>
+        <li>SystemView: Recorder Configuration items possibly not shown according to other item values. Fixed.</li>
+        <li>SystemView: On recording error, multiple error message boxes might be shown. Fixed.</li>
+        <li>SystemView: Possible crash when recording only interrupts. Fixed.</li>
+        <li>SystemView: Getting runtime of non-terminated executions might fail. Fixed.</li>
+        <li>SystemView: Under special circumstances event details were missing. Fixed.</li>
+        <li>SystemView: Display of execution at 100k borders might be wrong. Fixed.</li>
+        <li>SystemView: Contexts' seconds statistics were possibly wrong for activations across second boundaries. Fixed.</li>
+        <li>SystemView: Idle execution possibly not analyzed as stopped if task started running without a switch to scheduler. Fixed.</li>
+        <li>SystemView: Possible crash if a NamedType had more than 64 values. Fixed.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 3.12 [29. Apr 2020]</h2>
+      <h3>New Features</h3>
+      <ol>
+        <li>SystemView: Added Filter Header to Terminal Window.</li>
+        <li>SystemView: Added Data Column to Events Window (Toggle via context menu).</li>
+      </ol>
+      <h3>Improvements</h3>
+      <ol>
+        <li>SystemView: Changed hotkey for Recorder Configuration to Alt-Return (instead of Alt-Enter).</li>
+        <li>SystemView: Added Terminal statistics to System Information.</li>
+        <li>SystemView: Added Marker statistics to System Information.</li>
+        <li>SystemView: Improved display of longer durations as mm:ss.</li>
+        <li>SystemView: Improved display of Name Marker Event.</li>
+        <li>SystemView: Improved error/warning output.</li>
+        <li>SystemView: Wait for more data if expected but target does not send (e.g. while halted).</li>
+        <li>SystemView: Synchronize multi-selection in Terminal with Events Window.</li>
+        <li>SystemView: Display Runtime statistics in table view.</li>
+        <li>Target Source: Improved structure of target configurations.</li>
+        <li>Target Source: Updated embOS target configurations.</li>
+        <li>Target Source: Added embOS target configurations.</li>
+        <li>Target Source: Updated default configuration to not define locking in simulation.</li>
+      </ol>
+      <h3>Program corrections</h3>
+      <ol>
+        <li>SystemView: Warning and Error output was shown as Log message. Fixed.</li>
+        <li>SystemView: Log messages were not correctly formatted on host. Fixed.</li>
+        <li>SystemView: Messages without arguments ran though formatter. Fixed.</li>
+        <li>SystemView: SystemView could crash when accessing scheduler infor early in a recording. Fixed.</li>
+        <li>SystemView: Recording did possibly not start (seen on macOS and Linux). Fixed.</li> 
+        <li>SystemView: Negative time offset was not correctly displayed. Fixed.</li>
+        <li>SystemView: Possibly multiple error popups. fixed.</li>
+        <li>SystemView: Recorder restart after error possibly failed. Fixed.</li>
+        <li>SystemView: Markers were possibly not shown. Fixed.</li>
+        <li>SystemView: Timeline elements were possibly not shown at high zoom levels. Fixed.</li>
+        <li>SystemView: License Manager did not recognize licenses installed with older versions. Fixed.</li>
+        <li>SystemView: Systemview possibly crashed after analyzing Overflow Events. Fixed.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 3.10 [16. Dec 2019]</h2>
+      <h3>New Features</h3>
+      <ol>
+        <li>
+          SystemView: Redesigned GUI.
+          <ul>
+            <li>Windows can be moved, docked, and tabbed.</li>
+            <li>Navigation and zoom improved.</li>
+            <li>Dialogs and menus reworked.</li>
+          </ul>
+        </li>
+        <li>SystemView: Changed licensing to free non-commercial use of all features.</li>
+        <li>SystemView: Added IP Recorder.</li>
+        <li>SystemView: Added UART Recorder.</li>
+        <li>SystemView: Display Markers (User Events) in timeline.</li>
+        <li>SystemView: Runtime Window added.</li>
+        <li>SystemView: Context interrupt time added.</li>
+        <li>SystemView: Data export added.</li>
+        <li>Target Source: Added IP Recorder for embOS and emNet.</li>
+        <li>Target Source: Added IP Recorder for embOS Windows Simulation.</li>
+        <li>Target Source: Added UART Recorder.</li>
+        <li>Target Source: Added event to record intermediate Markers between start and stop.</li>
+      </ol>
+      <h3>Improvements</h3>
+      <ol>
+        <li>SystemView: Added Names for Timers.</li>
+        <li>SystemView: Improved (multi) selection of Events.</li>
+        <li>SystemView: Added drag of Timeline without changing selected events (when Alt key is down).</li>
+        <li>SystemView: Added Tooltips and Context Menu to Contexts Window.</li>
+        <li>SystemView: Run Time of tasks is now measured from Task Run to Task Block/Stop.</li>
+        <li>SystemView: Load and analysis time of recordings improved.</li>
+        <li>SystemView: Resource usage improved.</li>
+        <li>SystemView: Addvanced settings for J-Link configuration added.</li>
+        <li>Target Source: #ifndef'd options in SEGGER_SYSVIEW_Conf.h to enable definition from project options.</li>
+        <li>Target Source: Added callback to notify recorder (such as UART Recorder) about new Events.</li>
+        <li>Target Source: Renamed User Events to Markers.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.52d [13. Aug 2018]</h2>
+      <div>
+        <h3>Program corrections</h3>
+        <ol>
+          <li>
+            SystemView: RTT Control Block detection possibly timed out too early. Fixed.
+          </li>
+          <li>
+            SystemView: Unhandled exception crash when running out of memory. Fixed.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.52c [13. Aug 2018]</h2>
+      <div>
+        <h3>Improvements</h3>
+        <ol>
+          <li>
+            SystemView PRO: Initially load 5M events instead of 1M.
+          </li>
+        </ol>
+        <h3>Program corrections</h3>
+        <ol>
+          <li>
+            SystemView PRO: Under special circumstances no more than 1M events were loaded. Fixed.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.52b [13. Aug 2018]</h2>
+      <div>
+        <h3>New Features</h3>
+        <ol>
+          <li>Target Source: Added support for ARMv8m baseline.</li>
+        </ol>
+        <h3>Improvements</h3>
+        <ol>
+          <li>
+            Target source: Option to start recording right after init added to embOS sample configurations.
+          </li>
+          <li>
+            Target source: FreeRTOS integration for FreeRTOS V10 and a:FreeRTOS added.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.52a [07. Sep 2018]</h2>
+      <div>
+        <h3>Improvements</h3>
+        <ol>
+          <li>
+            Target Source: uc/OS-II support added.
+          </li>
+          <li>
+            Target source: FreeRTOS integration split for V8 and V8.
+          </li>
+        </ol>
+        <h3>Program corrections</h3>
+        <ol>
+          <li>
+            FreeRTOS Integration: SYSVIEW_DeleteTask used wrong struct members. Fixed.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.52 [07. Sep 2018]</h2>
+      <div>
+        <h3>New Features</h3>
+        <ol>
+          <li>
+            SystemView: Command line configuration added.
+          </li>
+          <li>
+            SystemView: Single Instance Mode added.
+          </li>
+          <li>
+            Target Source: Support for Micrium OS Kernel added.
+          </li>
+        </ol>
+        <h3>Improvements</h3>
+        <ol>
+          <li>
+            SystemView: Display of hexadecimal values improved.
+          </li>
+          <li>
+            SystemView: JTAG Scan Chain configuration added.
+          </li>
+          <li>
+            Target Source: Sample configurations sorted by OS.
+          </li>
+          <li>
+            Target Source: Cycle Count enable in post mortem mode added to sample configurations.
+          </li>
+          <li>
+            FreeRTOS Integration: Patch file for FreeRTOS V9 added.
+          </li>
+        </ol>
+        <h3>Program corrections</h3>
+        <ol>
+          <li>
+            SystemView: SystemView could crash when primary debug session stops. Fixed.
+          </li>
+          <li>
+            SystemView: SystemView could crash on startup if J-Link Software is not found. Fixed.
+          </li>
+          <li>
+            SystemView: SystemView could crash or show no events while running. Fixed.
+          </li>
+          <li>
+            FreeRTOS Integration: Deleted tasks have not been removed from internal list. Fixed.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.50 [04. May 2017]</h2>
+      <div>
+        <h3>New Features</h3>
+        <ol>
+          <li>
+            SystemView: SystemView PRO activation and license management added.
+          </li>
+          <li>
+            SystemView: Unlimited Recording added.<sup>1</sup>
+          </li>
+          <li>
+            SystemView: Custom Filters added.<sup>1</sup>
+          </li>
+          <li>
+            SystemView: Export of Terminal Output added.
+          </li>
+        </ol>
+        <h3>Improvements</h3>
+        <ol>
+          <li>
+            SystemView: Registered modules added to System Information.
+          </li>
+          <li>
+            SystemView: Recording analysis and load time improved.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.42 [01. Mar 2017]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40e [23. Feb 2017]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40d [03. Feb 2017]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40c [01. Feb 2017]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40b [27. Jan 2017]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40a [08. Sep 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.40 [28. Jul 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.38 [24. Jun 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.37a [17. Jun 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.37 [09. Jun 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.36a [27. May 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.36 [24. May 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.34 [01. Apr 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.32b [23. Mar 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.32a [17. Mar 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.32 [11. Mar 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.30 [27. Jan 2016]</h2>
+    </div>
+  </div>
+  <div class="divider-global">
+    <div class="container">
+      <h2>Version 2.28 [14. Jan 2016]</h2>
+    </div>
+  </div>
+  <!-- ****************************************************************** -->
+  <!-- Known problems/limitations                                         -->
+  <!-- ****************************************************************** -->
+  <div class="divider-global">
+    <div class="container">
+      <h2>Known problems/limitations</h2>
+      <div>
+        <ul>
+          <li>None.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="footer">
+  <div class="container">
+    <div>
+      <p>Copyright 2015-202^2 SEGGER Microcontroller GmbH. All rights reserved.<br>
+        For more information, please visit our website&nbsp;<a href="https://www.segger.com/" target="_blank">www.segger.com</a>&nbsp;or contact us at&nbsp;<a href="mailto:info@segger.com">info@segger.com</a>&nbsp;</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

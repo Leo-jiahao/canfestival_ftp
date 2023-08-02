@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcanopen.a  CMakeFiles/canopen.dir/objdict.c.o CMakeFiles/canopen.dir/driver_can.c.o CMakeFiles/canopen.dir/driver_timer.c.o
+/usr/bin/ranlib libcanopen.a

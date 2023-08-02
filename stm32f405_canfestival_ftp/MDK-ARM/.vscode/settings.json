@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "stm32f405_demo1_can.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "can.h": "c",
+        "stm32f405_demo1_flash.h": "c",
+        "stddef.h": "c",
+        "main.h": "c",
+        "gpio.h": "c",
+        "d_flash.h": "c",
+        "crc.h": "c",
+        "cmsis_os.h": "c",
+        "segger_rtt.h": "c",
+        "stm32f405_demo1_tim.h": "c",
+        "stdlib.h": "c",
+        "can_driver.h": "c",
+        "server_ftp.h": "c",
+        "objdict.h": "c",
+        "usr_can.h": "c"
+    }
+}

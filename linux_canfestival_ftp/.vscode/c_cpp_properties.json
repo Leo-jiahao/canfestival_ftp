@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/CanFestival/include",
+                "${workspaceFolder}/CanFestival/usr",
+                "/home/user/tools/esm6800/sysroots/cortexa7hf-neon-emtronix-linux-gnueabi/usr/include",
+                "/home/user/tools/esm6800/sysroots/x86_64-pokysdk-linux/usr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/home/user/tools/esm6800/sysroots/x86_64-pokysdk-linux/usr/bin/arm-emtronix-linux-gnueabi/arm-emtronix-linux-gnueabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-mfloat-abi=hard"
+            ]
+        }
+    ],
+    "version": 4
+}

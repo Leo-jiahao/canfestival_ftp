@@ -1,0 +1,2 @@
+/usr/bin/ar qc libco_ftp.a  CMakeFiles/co_ftp.dir/client_ftp.c.o
+/usr/bin/ranlib libco_ftp.a
